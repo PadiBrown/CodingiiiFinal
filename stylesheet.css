@@ -1,0 +1,83 @@
+#clients {
+  font-family: sans-serif;
+  width: 100%;
+}
+
+#clients td, #clients th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#clients tr:nth-child(even){background-color: #ddd;}
+
+#clients tr:hover {background-color: #ddd;}
+
+#clients th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #0457aa;
+  color: white;
+}
+
+#clientdetails {
+  font-family: sans-serif;
+  width: 100%;
+}
+#clientdetails {
+  font-family: sans-serif;
+  width: 100%;
+}
+
+#clientdetails td, #clients th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#clientdetails tr:nth-child(even){background-color: #ddd;}
+
+#clientdetails tr:hover {background-color: #ddd;}
+
+#clientdetails th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #0425aa;
+  color: white;
+}
+
+#clientdetails {
+  font-family: sans-serif;
+  width: 100%;
+}
+
+#investigationdetails {
+  font-family: sans-serif;
+  width: 100%;
+}
+#investigationdetails {
+  font-family: sans-serif;
+  width: 100%;
+}
+
+#investigationdetails td, #clients th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#investigationdetails tr:nth-child(even){background-color: #ddd;}
+
+#investigationdetails tr:hover {background-color: #ddd;}
+
+#investigationdetails th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4904aa;
+  color: white;
+}
+
+#investigationdetails {
+  font-family: sans-serif;
+  width: 100%;
+}
