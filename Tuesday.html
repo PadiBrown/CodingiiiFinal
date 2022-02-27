@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tables</title>
+    <link rel="stylesheet" href="stylesheet1.css">
+
+</head>
+<body>
+
+<h1>Risk Summary Tables</h1>
+<h2>Table 1</h2>
+
+<table id="clients">
+    <tr>
+        <th>Client Name</th>
+        <th>Line of Business</th>
+        <th>Risk Factor</th>
+    </tr>
+    <tr>
+        <td>Anthony (Tony) Montana</td>
+        <td>Private Banking</td>
+        <td>High Risk Industry</td>
+    </tr>
+    <tr>
+        <td>Alejandro Sosa</td>
+        <td>Direct Investing</td>
+        <td>Country Risk</td>
+    </tr>
+    <tr>
+        <td>Hector Barzini</td>
+        <td>Capital Markets</td>
+        <td>Suspicious Transactions Report</td>
+    </tr>
+</table>
+
+<p>Change the color of the table by clicking the appropriate button</p>
+<button onclick="turn_purple()">Purple</button>
+<button onclick="turn_blue()">Blue</button>
+<button onclick="turn_yellow()">Yellow</button>
+<script>
+function turn_purple() {
+  document.getElementById ("clients").style.borderColor = "purple";
+ }
+
+ function turn_blue() {
+  document.getElementById ("clients").style.borderColor = "blue";
+ }
+
+ function turn_yellow() {
+  document.getElementById ("clients").style.borderColor = "yellow";
+ }
+</script>
+<br>
+<br>
+
+<p>Make more changes to the table by clicking below</p>
+<br>
+<div class="dropdown">
+    <list onclick="myFunction()" class="dropbtn">Change Border Size</list>
+    <div id="myDropdown" class="dropdown-content">
+        <button onclick="Change_20()">20px</button><br>
+        <button onclick="Change_30()">30px</button><br>
+        <button onclick="Change_40()">40px</button><br>
+    </div>
+</div>
+
+<script>
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+
+</script>
+
+<script>
+function Change_20() {
+  document.getElementByID(("clients").style.border = 20px;
+}
+
+function Change_30() {
+  document.getElementByID(("clients").style.border = 30px;
+}
+
+function Change_40() {
+  document.getElementByID(("clients").style.border = 40px;
+}
+</script>
+
+</body>
+</html>
+
