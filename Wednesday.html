@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Input Table</title>
+    <link rel="stylesheet" href="stylesheet2.css">
+
+</head>
+<body>
+<h1>Risk Summary Tables</h1>
+<h2>Table 1</h2>
+
+<table id="clients">
+    <tr>
+        <th>Client Name</th>
+        <th>Line of Business</th>
+        <th>Risk Factor</th>
+    </tr>
+    <tr>
+        <td>Anthony (Tony) Montana</td>
+        <td>Private Banking</td>
+        <td>High Risk Industry</td>
+    </tr>
+    <tr>
+        <td>Alejandro Sosa</td>
+        <td>Direct Investing</td>
+        <td>Country Risk</td>
+    </tr>
+    <tr>
+        <td>Hector Barzini</td>
+        <td>Capital Markets</td>
+        <td>Suspicious Transactions Report</td>
+    </tr>
+</table>
+<br>
+<p>Enter info below to add new client to table:</p>
+<form action>
+    Client Name:    <input type="text" id ="client_name" name="Name" /><br />
+    Line of Business: <input type="text" id="line_of_business" name="Line of Business" /><br />
+    Risk Factor: <input type="text" id="risk_factor" name="Risk Factor" /><br />
+    <input type="button" value="Add new" onclick="add_info_to_table()">
+</form>
+
+<script>
+function add_info_to_table() {
+  var table = document.getElementById("clients");
+  var row = table.insertRow(4);
+  var client_name = row.insertCell(0);
+  var line_of_business = row.insertCell(1);
+  var risk_factor = row.insertCell(2);
+  client_name.innerHTML = document.getElementById("client_name").value;
+  line_of_business.innerHTML = document.getElementById("line_of_business").value;
+  risk_factor.innerHTML = document.getElementById("risk_factor").value; 
+}
+</script>
+
+</body>
+</html>
